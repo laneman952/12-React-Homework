@@ -1,7 +1,6 @@
 import headerImg from '../../assets/header.jpg';
 // Add an image. Call it header.jpg and place it in the assets folder.
-function Header(props) {
-    
+function Header(props) { 
   return (
     <header>
       <h1>Kyle Lane</h1>
