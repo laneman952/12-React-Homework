@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router';
 import Navbar from '../UI/Navbar';
 
 function Nav({currentPage}) {
