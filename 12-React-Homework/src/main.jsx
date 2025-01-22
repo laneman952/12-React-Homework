@@ -1,5 +1,3 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
 import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router';
 import ReactDOM from 'react-dom/client'
@@ -30,7 +28,7 @@ const router = createBrowserRouter([
         element: <PortfolioPage />,
   },
   {
-        path: 'contact/:id',
+        path: 'contact',
         element: <ContactPage />,
   },
   {
@@ -43,9 +41,3 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById('root')).render(
   <RouterProvider router={router} />
 );
-
-// createRoot(document.getElementById('root')).render(
-//   <StrictMode>
-//     <App />
-//   </StrictMode>,
-// )

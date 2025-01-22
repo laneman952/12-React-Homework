@@ -6,10 +6,17 @@ function Nav({currentPage}) {
   return (
     <nav>
       <ul>
-        <li className = {`mx-5 ${currentPage === '/' && 'navActive'}`}>
-
+        {pages.map(Page => (
+          <li className = {`mx-5 ${currentPage === '/' && 'navActive'}`}
+          key = {Page}
+          >
+            <Link to = {`/${Page}`}>{`${Page}`}</Link>
         </li>
+        ))}
+        
       </ul>
     </nav>
   );
 }
+
+export default Nav
