@@ -1,7 +1,6 @@
 import { Outlet } from 'react-router'
-import { useState } from 'react'
-import Header from './components/header'
-import Footer from './components/footer'
+import Header from './Components/Header'
+import Footer from './Components/Footer'
 
 import './App.css'
 
