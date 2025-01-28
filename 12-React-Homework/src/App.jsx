@@ -13,8 +13,7 @@ function App() {
       <Header>
         <Nav currentPage = {currentPage} />
       </Header>
-      <main>
-      <h1>Kyle Lane</h1>
+      <main className="main-content">
       <Outlet />
     </main>
     <Footer />

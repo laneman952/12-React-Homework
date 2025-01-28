@@ -53,6 +53,16 @@ nav .navActive {
   border-bottom: 2px solid #3498db; 
 }
 
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  height: 100vh;
+  flex-direction: column;
+}
+
 footer {
   background-color: #34495e;
   color: white;
