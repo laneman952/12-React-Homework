@@ -4,7 +4,7 @@ function Header(props) {
   return (
     <header>
       <h1>Kyle Lane</h1>
-      <img src={headerImg}  alt="Header Image"></img>
+      {/* <img src={headerImg}  alt="Header Image"></img> */}
       {props.children}
     </header>
   );
