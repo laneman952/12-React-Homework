@@ -1,7 +1,6 @@
 import { Outlet } from 'react-router'
 import Header from './Components/Header'
 import Footer from './Components/Footer'
-import bodyImg from './assets/body.jpg';
 
 import './App.css'
 import Nav from './Components/Nav'
@@ -16,7 +15,6 @@ function App() {
       </Header>
       <main className="main-content">
       <Outlet />
-      <img src={bodyImg}  alt="Body Image"></img>
     </main>
     <Footer />
     </> 
