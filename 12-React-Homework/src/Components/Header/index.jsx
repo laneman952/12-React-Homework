@@ -3,7 +3,9 @@
 function Header(props) { 
   return (
     <header>
-      <h1>Kyle Lane</h1>
+      <a href="/" className="home-link">
+        <h1>Kyle Lane</h1>
+      </a>
       {props.children}
     </header>
   );
