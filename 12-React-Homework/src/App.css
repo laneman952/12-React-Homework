@@ -154,6 +154,67 @@ nav .navActive {
   background-color: #000dff;
 }
 
+.portfolio-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  padding: 40px;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  width: 100%;
+}
+
+.portfolio-item {
+  max-width: 80%;
+  margin: auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.portfolio-item:hover {
+  transform: scale(1.05);
+}
+
+.project-image {
+  max-width: 90%;
+  height: auto;
+  max-height: 500px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+.project-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.project-links a {
+  text-decoration: none;
+  color: white;
+  background-color: #2c3e50;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+  font-size: 1rem;
+}
+
+.project-links a:hover {
+  background-color: #000dff;
+}
+
 footer {
   background-color: #34495e;
   color: #ffffff;
@@ -162,4 +223,18 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer-icon {
+  width: 30px;
+  height: auto;
+  transition: 0.3s ease, opacity 0.3s ease;
+}
+
+.footer-icon:hover {
+  transform: scale(1.2);
+  opacity: 0.8;
 }
