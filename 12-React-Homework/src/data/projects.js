@@ -1,7 +1,7 @@
 const projects = [
     {
         title: "Piano Pulse",
-        image: "../public/firstproject.png",
+        image: "/firstproject.png",
         description: "An interactive piano app. Allows you to play piano, record music, and play back saved music.",
         github: "https://github.com/laneman952/firstProject.git"
     },
