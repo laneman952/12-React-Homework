@@ -34,7 +34,7 @@ h1, h2, h3, p, span {
   font-size: 3em;
   font-weight: bold;
   text-align: center;
-  background: linear-gradient(50deg, #153ca7, #0026ff, #ee0909, #e2650c);
+  background: linear-gradient(0deg, #153ca7, #0026ff, #ee0909, #e2650c);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   line-height: 1.1;
