@@ -76,7 +76,7 @@ nav .navActive {
   justify-content: center;
   text-align: center;
   width: 100%;
-  height: calc(100vh - 140px); /* Keeps spacing correct */
+  height: calc(100vh - 140px); 
   padding: 20px;
 }
 
@@ -124,6 +124,7 @@ nav .navActive {
 .contact-form {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 15px;
   width: 50%;
   background: rgba(255, 255, 255, 0.1);
