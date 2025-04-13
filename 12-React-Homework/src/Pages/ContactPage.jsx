@@ -15,7 +15,15 @@ function ContactPage () {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        alert("Thank you for your message!");
+
+        console.log("Form submitted");
+
+        if (!formData.current) {
+            console.error("Form not found");
+            return;
+        }
+
+        // console.log(Form ref exists:", form.current);
 
         emailjs.sendForm(
             "service_v7dq2nn",
@@ -23,7 +31,8 @@ function ContactPage () {
             form.current,
             "AmVvhjl0d_Xw9udte"
         ).then(
-            () => {
+            (result) => {
+                console.log("Email sent successfully:", result.text);
                 alert("Message sent successfully!");
                 setFormData({ name: "", email: "", message: "" });
             },
@@ -37,7 +46,7 @@ function ContactPage () {
     return(
         <div className="contact-container">
              <h1>Contact</h1>
-            <form onSubmit={handleSubmit} className="contact-form">
+            <form ref={form} onSubmit={handleSubmit} className="contact-form">
                 <label>
                     Name:
                     <input
