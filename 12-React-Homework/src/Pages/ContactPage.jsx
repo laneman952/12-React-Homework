@@ -1,6 +1,8 @@
-import { useState } from "react"
+import { useRef, useState } from "react"
+import emailjs from "emailjs-com"
 
 function ContactPage () {
+    const form = useRef();
     const [formData, setFormData] = useState({
         name: "",
         email: "",
@@ -14,6 +16,22 @@ function ContactPage () {
     const handleSubmit = (e) => {
         e.preventDefault();
         alert("Thank you for your message!");
+
+        emailjs.sendForm(
+            "service_v7dq2nn",
+            "template_obmbtlp",
+            form.current,
+            "AmVvhjl0d_Xw9udte"
+        ).then(
+            () => {
+                alert("Message sent successfully!");
+                setFormData({ name: "", email: "", message: "" });
+            },
+            (error) => {
+                alert("Failed to send message, please try again.");
+                console.error("EmailJS error:", error);
+            }
+        );
     };
 
     return(
