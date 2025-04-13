@@ -27,11 +27,11 @@ body {
   display: flex;
   min-width: 320px;
   min-height: 100vh;
-  color: #000000;
+  color: #ffffff;
 }
 
 h1, h2, h3, p, span {
-  font-size: 3em;
+  font-size: 2em;
   font-weight: bold;
   text-align: center;
   line-height: 1.1;
