@@ -18,7 +18,7 @@ function ContactPage () {
 
         console.log("Form submitted");
 
-        if (!formData.current) {
+        if (!form.current) {
             console.error("Form not found");
             return;
         }
