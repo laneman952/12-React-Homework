@@ -1,0 +1,13 @@
+.home-main {
+    background: url('/background-image-tech.png') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 100px;
+    align-items: center;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+  }

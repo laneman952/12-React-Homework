@@ -1,6 +1,7 @@
 import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router';
 import ReactDOM from 'react-dom/client'
+import ErrorPage from './Pages/ErrorPage';
 
 
 import App from './App.jsx'
@@ -34,6 +35,10 @@ const router = createBrowserRouter([
   {
         path: 'resume',
         element: <ResumePage />,
+  },
+  {
+      path: '*',
+      element: <ErrorPage />,
   }  
   ]}    
 ])

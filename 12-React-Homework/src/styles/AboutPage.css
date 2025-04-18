@@ -1,0 +1,25 @@
+.about-container {
+    background: transparent;
+    color: #ffffff;
+    min-height: 100vh;
+    padding: 100px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .about-container h1 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+  }
+  
+  .about-container p {
+    max-width: 800px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    text-align: justify;
+    text-align-last: center;
+    padding: 0 10px;
+  }

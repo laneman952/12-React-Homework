@@ -1,10 +1,16 @@
 const projects = [
     {
         title: "Piano Pulse",
-        image: "/firstproject.png",
         description: "An interactive piano app. Allows you to play piano, record music, and play back saved music.",
+        image: "/firstproject.png",
         github: "https://github.com/laneman952/firstProject.git"
     },
+    {
+        title: "Spendly",
+        description: "A subscription tracking and bill reminder app built with React and PostgreSQL.",
+        image: "/images/spendly-preview.png",
+        github: "https://github.com/laneman952/spendly.git"
+      },
 ];
 
 export default projects

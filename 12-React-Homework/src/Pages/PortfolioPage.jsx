@@ -1,8 +1,9 @@
 import projects from "../data/projects";
+import "../styles/PortfolioPage.css";
 
 function PortfolioPage () {
     return(
-        <div className="portfolio-container">
+        <div className="portfolio-wrapper">
         <h1>Portfolio</h1>
         <div className="portfolio-grid">
             {projects.map((project, index) => (

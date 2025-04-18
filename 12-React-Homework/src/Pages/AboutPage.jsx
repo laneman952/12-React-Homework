@@ -1,6 +1,8 @@
+import '../styles/AboutPage.css';
+
 function AboutPage () {
     return(
-     <>
+     <div className="about-container">
         <h1>About Me</h1>
         <p>
         I am a Full Stack Software Developer with a passion for learning and creating! 
@@ -10,7 +12,7 @@ function AboutPage () {
         Creativity, time management, and effective communication skills are vital to what I bring into any work environment. 
         I believe in setting the tone for working well with others and meeting both personal and professional goals. 
         </p>
-    </>
-    )
+    </div>
+  );
 }
 export default AboutPage

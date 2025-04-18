@@ -1,16 +1,13 @@
-import { Link } from 'react-router';
+// import { Link } from 'react-router';
+import '../styles/HomePage.css';
 
-function HomePage(props) {
-  if (props.children === "Kyle Lane") {
-    return <h1><Link to="/">Kyle Lane</Link></h1>;
-  } else {
+function HomePage() {
     return (
-      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: '100px' }}>
-        <h1>Hello, I'm Kyle Lane.</h1>
+      <div className="home-main">
+        <h1>Hey, I'm Kyle Lane.</h1>
         <h2>I am a Full Stack Software Developer!</h2>
       </div>
     );
   }
-}
 
 export default HomePage;
