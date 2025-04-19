@@ -58,28 +58,6 @@ nav .navActive {
   border-bottom: 2px solid #007bff; 
 }
 
-.resume-link {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #2c3e50;
-  color: white;
-  font-size: 1.2rem;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background 0.3s ease;
-}
-
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 15px;
-  width: 50%;
-  background: rgba(255, 255, 255, 0.1);
-  padding: 8px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-}
-
 .project-image {
   max-width: 90%;
   height: auto;
