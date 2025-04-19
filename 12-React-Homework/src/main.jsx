@@ -36,12 +36,13 @@ const router = createBrowserRouter([
         path: 'resume',
         element: <ResumePage />,
   },
-  {
+],
+  },
+   {
       path: '*',
       element: <ErrorPage />,
-  }  
-  ]}    
-])
+   },  
+  ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <RouterProvider router={router} />

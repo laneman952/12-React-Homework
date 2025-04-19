@@ -8,7 +8,7 @@ const projects = [
     {
         title: "Spendly",
         description: "A subscription tracking and bill reminder app built with React and PostgreSQL.",
-        image: "/images/spendly-preview.png",
+        image: "/Spendly-pic.png",
         github: "https://github.com/laneman952/spendly.git"
       },
 ];
