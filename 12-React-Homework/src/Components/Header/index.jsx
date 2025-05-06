@@ -1,14 +1,16 @@
 import { useState } from "react";
-import { Link } from "react-router";
-import "../../styles/Header.css"; // Or wherever your navbar styles live
+import { NavLink } from "react-router-dom";
+import "../../styles/Header.css";
 
 function Header() {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
+  const closeMobileMenu = () => setMobileMenuOpen(false);
+
   return (
     <header>
       <h1 className="logo">
-        <Link to="/">Kyle Lane</Link>
+        <NavLink to="/" className={({ isActive }) => (isActive ? "navActive" : "")}>Kyle Lane</NavLink>
       </h1>
 
       <nav>
@@ -17,10 +19,10 @@ function Header() {
         </div>
 
         <ul className={`nav-links ${isMobileMenuOpen ? "open" : ""}`}>
-          <li><Link to="/about" onClick={() => setMobileMenuOpen(false)}>About</Link></li>
-          <li><Link to="/portfolio" onClick={() => setMobileMenuOpen(false)}>Portfolio</Link></li>
-          <li><Link to="/contact" onClick={() => setMobileMenuOpen(false)}>Contact</Link></li>
-          <li><Link to="/resume" onClick={() => setMobileMenuOpen(false)}>Resume</Link></li>
+          <li><NavLink to="/about" className={({ isActive }) => (isActive ? "navActive" : "")} onClick={closeMobileMenu}>About</NavLink></li>
+          <li><NavLink to="/portfolio" className={({ isActive }) => (isActive ? "navActive" : "")} onClick={closeMobileMenu}>Portfolio</NavLink></li>
+          <li><NavLink to="/contact" className={({ isActive }) => (isActive ? "navActive" : "")} onClick={closeMobileMenu}>Contact</NavLink></li>
+          <li><NavLink to="/resume" className={({ isActive }) => (isActive ? "navActive" : "")} onClick={closeMobileMenu}>Resume</NavLink></li>
         </ul>
       </nav>
     </header>

@@ -1,5 +1,5 @@
 import './index.css'
-import { createBrowserRouter, RouterProvider } from 'react-router';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import ReactDOM from 'react-dom/client'
 import ErrorPage from './Pages/ErrorPage';
 
