@@ -6,7 +6,7 @@ function ResumePage () {
         <h1>My Resume</h1>
         <div className="resume-container">
         <iframe
-            src="/Kyle's-Software-Developing-Resume.pdf"
+            src="https://docs.google.com/gview?url=https://kylelane-portfolio.netlify.app/Kyle's-Software-Developing-Resume.pdf&embedded=true"
             title="Kyle Lane Resume"
             className="resume-iframe"
         ></iframe>
