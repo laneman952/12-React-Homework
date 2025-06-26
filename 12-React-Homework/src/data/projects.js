@@ -11,6 +11,12 @@ const projects = [
         image: "/Spendly-pic.png",
         github: "https://github.com/laneman952/spendly.git"
       },
+      {
+        title: "To-Do-List",
+        description: "A simple to-do list app built with React. Allows you to add, check off, edit, delete, rearrange tasks.",
+        image: "/todo-list.png",
+        github: "https://github.com/laneman952/To-Do-List.git"
+      }
 ];
 
 export default projects
